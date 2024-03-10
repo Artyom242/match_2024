@@ -10,14 +10,14 @@ const text = [
     'Вы прекрасны, как всегда!'
   ];
   
-   let line = 0;
+    let line = 0;
     let count = 0;
     let result = '';
     function typeLine() {
       let interval = setTimeout(
         () => {
           result += text[line][count]
-          document.querySelector('pre').innerHTML =result +'|';
+          document.querySelector('pre').innerHTML =result;
   
   
         count++;
@@ -26,7 +26,7 @@ const text = [
           line++;
           if (line == text.length) {
             clearTimeout(interval);
-             document.querySelector('pre').innerHTML =result;
+             document.querySelector('.pre').innerHTML =result;
             return true;
           }
         }
@@ -35,6 +35,6 @@ const text = [
     }
     typeLine();
   
-  function getRandomInt(max) {
-    return Math.floor(Math.random() * Math.floor(max));
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * Math.floor(max));
   }
