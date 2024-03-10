@@ -30,10 +30,14 @@ aside {
 
 html,
 body {
-  height: 100%;
   width: 100%;
   font-size: 100%;
   line-height: 1;
+  background-image: url("../img/fon3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
 input,
@@ -84,7 +88,7 @@ h6 {
 
 body {
   font-family: "Playfair Display", sans-serif;
-  height: 100%;
+  overflow-y: hidden;
 }
 
 body::-webkit-scrollbar {
